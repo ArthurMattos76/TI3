@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        button {
+            padding: 20px; 
+            background-color: lightblue
+        }
+    </style>
+</head>
+<body>
+    <h1>Pote das Lágrimas</h1>
+    <button onclick="Inicio()">Guarde suas lágrimas aqui!</button>
+
+    <script>
+        function Inicio() {
+            let nome = window.prompt("Chore aqui!");
+         window.alert(`Olá, ${nome}, Agora desista dos sonhos e morra!`);
+        }   
+        </script>
+
+        <h2>Clique aqui para saber sua curvatura!</h2>
+        <button onclick="curva()">Curva</button>
+        <script>
+            alert("Clique no botão para saber a curvatura do seu cabelo!");
+            function curva() {
+                // Array de curvaturas possíveis
+                const curvaturas = ["A1", "A2", "A3", "B1", "B2", "B3", "C1", "C2", "C3", "D1", "D2", "D3"];
+                // Sorteia uma curvatura aleatória
+                const resultado = curvaturas[Math.floor(Math.random() * curvaturas.length)];
+                // Exibe o prompt com a mensagem desejada
+                window.prompt(`Esta é sua curvatura: ${resultado}`);
+            }
+        </script>
+        <!-- Removido o uso de prompt na função curva, agora exibe com alert -->
+        <script>
+            function curva() {
+                const curvaturas = ["A1", "A2", "A3", "B1", "B2", "B3", "C1", "C2", "C3", "D1", "D2", "D3"];
+                const resultado = curvaturas[Math.floor(Math.random() * curvaturas.length)];
+                window.alert(`Esta é sua curvatura: ${resultado}`);
+            }
+        </script>
